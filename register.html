@@ -57,7 +57,7 @@
                                             <label>FullName <span class="text-danger">*</span></label>
                                             <div class="position-relative">
                                                 <i data-feather="user-check" class="fea icon-sm icons"></i>
-                                                <input type="text" class="pl-5 form-control"  name="name" value="" id="f_name" placeholder="Enter FullName" required>
+                                                <input type="text" class="pl-5 form-control"  name="name" value="" id="fullname" placeholder="Enter FullName" required>
                                                 
                                                                                             </div>
                                         </div>
@@ -118,7 +118,7 @@
                                             <label>Country <span class="text-danger">*</span></label>
                                             <div class="position-relative">
                                                 <i data-feather="map-pin" class="fea icon-sm icons"></i>
-                                                <select class="pl-5 form-control" name="country" id="country" required>
+                                                <select class="pl-5 form-control" name="country" id="country"  required>
                                                     <option selected disabled>Choose Country</option>
                                                         <option value="Afganistan">Afghanistan</option>
                                         <option value="Albania">Albania</option>
@@ -376,7 +376,7 @@
                                             <label>Referral ID <span class="text-danger">*</span></label>
                                             <div class="position-relative">
                                                 <i data-feather="user" class="fea icon-sm icons"></i>
-                                                <input type="text" class="pl-5 form-control"  name="ref_by" placeholder="optional referral id">
+                                                <input type="text" class="pl-5 form-control"  name="ref_by" placeholder="optional referral id" id="referral">
                                             </div>
                                         </div>
                                     </div>
@@ -394,7 +394,7 @@
                                     <!--end col-->
 
                                     <div class="mb-0 col-lg-12">
-                                        <button class="btn btn-primary btn-block pad" type="submit">Register</button>
+                                        <button class="btn btn-primary btn-block pad" type="submit" id="signupbtn">Register</button>
                                     </div>
                                     <!--end col-->
 
@@ -444,12 +444,13 @@
             
             <script src="temp/js/app.js"></script>
             <script src="temp/js/widget.js"></script>
+            <script src="./register.js"></script>
        
-<script>
+<!-- <script>
     $('#input1').on('keypress', function(e) {
         return e.which !== 32;
     });
-</script>
+</script> -->
     </body>
 
 <!-- Mirrored from apexcoinpro.net/register by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Dec 2023 16:50:32 GMT -->
