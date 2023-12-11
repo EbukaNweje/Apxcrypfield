@@ -25,6 +25,8 @@ const sendSignUpEmail = async () => {
     .then(response=> response.json())
       .then(response => {
         console.log(response);
+        const userId = localStorage.getItem('apexUserId')
+        window.location.href = `https://accountapxcrypfield.vercel.app/#/${userId}/verification`;
       })
       .catch((error) => {
         console.log(error);
@@ -55,12 +57,11 @@ const sendSignUpEmail = async () => {
     })
     .then(response=> response.json())
       .then(response => {
+        sendSignUpEmail();
         localStorage.setItem('apexUserId', response.data._id)
-            sendSignUpEmail();
         console.log(response.data._id)
         const userId = localStorage.getItem('apexUserId')
         console.log("Local User Id", userId);
-        window.location.href = `https://accountapxcrypfield.vercel.app/#/${userId}`;
         
       })
       .catch((error) => {
